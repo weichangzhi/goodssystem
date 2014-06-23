@@ -1,0 +1,415 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GoodsManageSystem.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GoodsManageSystem.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\client.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\sell.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\buy.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 237, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 货物管理系统"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "货物管理系统 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,169,7,50,14,WS_GROUP
+    LTEXT           "武汉华仪自动化有限公司",IDC_STATIC,42,41,89,8
+END
+
+IDD_GOODSMANAGESYSTEM_DIALOG DIALOGEX 0, 0, 680, 455
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "货物管理系统"
+MENU IDR_MENUMAIN
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",TCS_BUTTONS | 
+                    TCS_TOOLTIPS,0,5,680,450
+END
+
+IDD_DIALOG_CLIENT DIALOG DISCARDABLE  0, 0, 680, 430
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_CLIENT,137,5,74,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "查询",IDC_BUTTON_CLIENT_SELECT,225,5,38,14
+    PUSHBUTTON      "增加客户记录",IDC_BUTTON_CLIENT_ADD,279,5,61,14
+    COMBOBOX        IDC_COMBO_CLIENT,49,5,81,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST_CLIENT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,25,680,405
+    LTEXT           "查询方式：",IDC_STATIC,5,10,41,8
+END
+
+IDD_DIALOG_SELL DIALOG DISCARDABLE  0, 0, 680, 430
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_SELL,137,5,74,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "查询",IDC_BUTTON_SELL_SELECT,225,5,38,14
+    PUSHBUTTON      "增加出货记录",IDC_BUTTON_SELL_ADD,279,5,70,14
+    COMBOBOX        IDC_COMBO_SELL,49,5,81,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST_SELL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,25,680,405
+    LTEXT           "查询方式：",IDC_STATIC,5,10,41,8
+END
+
+IDD_DIALOG_BUY DIALOG DISCARDABLE  0, 0, 680, 430
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_BUY,137,5,74,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "查询",IDC_BUTTON_BUY_SELECT,225,5,38,14
+    PUSHBUTTON      "增加进货记录",IDC_BUTTON_BUY_ADD,279,5,70,14
+    COMBOBOX        IDC_COMBO_BUY,49,5,81,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查询方式：",IDC_STATIC,5,10,41,8
+    CONTROL         "List1",IDC_LIST_BUY,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,25,680,405
+END
+
+IDD_DIALOG_INPUT_CLIENT DIALOG DISCARDABLE  0, 0, 307, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加客户资料"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_COMPANYNAME,89,35,199,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TAXINDEX,89,55,199,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BANKNO,89,75,199,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESSPHONE,89,92,199,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RECEIVER,89,111,199,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAILADDRESSPHONE,89,132,199,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,110,159,50,14
+    PUSHBUTTON      "取消",IDCANCEL,185,159,50,14
+    LTEXT           "公司名称：",IDC_STATIC,21,40,38,8
+    LTEXT           "纳税人识别号：",IDC_STATIC,21,59,53,8
+    LTEXT           "开户行和账号：",IDC_STATIC,21,78,53,8
+    LTEXT           "地址和电话：",IDC_STATIC,21,97,46,8
+    LTEXT           "收货人：",IDC_STATIC,21,116,31,8
+    LTEXT           "邮寄地址和电话：",IDC_STATIC,21,135,60,8
+    LTEXT           "记录号：",IDC_STATIC,23,20,31,8
+    EDITTEXT        IDC_EDIT_CLIENT_LOGID,89,16,199,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+END
+
+IDD_DIALOG_INPUT_SELL DIALOG DISCARDABLE  0, 0, 350, 324
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加出货记录"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_INPUTSELL_COMPANYNAME,66,22,93,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_USERADDRESS,66,42,93,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_USERPHONE,66,62,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_USERNAME,66,81,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_SELLNAME,237,61,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_SELLPHONE,237,82,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_PRODUCTMODEL,69,132,61,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_PROPRICE,69,151,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_PRONUM,69,169,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_UINT,69,187,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_MONEY,69,205,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_TIPS,69,223,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_TOTALPRICE,66,262,58,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTSELL_SELLPRICE,236,262,59,14,
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,53,299,50,14
+    PUSHBUTTON      "取消",IDCANCEL,168,299,50,14
+    PUSHBUTTON      "打印预览",IDC_BUTPREVIEW,236,299,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "打印",IDC_BUTPRINT,292,299,50,14,NOT WS_VISIBLE
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,237,41,93,15
+    PUSHBUTTON      "添加->",IDC_BUTTON_ADD,138,179,29,14
+    LTEXT           "出货日期：",IDC_STATIC,197,44,38,8
+    LTEXT           "公司名称：",IDC_STATIC,27,26,38,8
+    LTEXT           "总价：",IDC_STATIC,26,265,23,8
+    LTEXT           "出货价格：",IDC_STATIC,196,265,38,8
+    LTEXT           "货物品种：",IDC_STATIC,30,136,37,8
+    LTEXT           "货物数量：",IDC_STATIC,30,172,37,8
+    LTEXT           "货物价格：",IDC_STATIC,30,154,37,8
+    GROUPBOX        "商品信息",IDC_STATIC,11,113,329,170
+    GROUPBOX        "",IDC_STATIC,25,122,110,122
+    CONTROL         "List1",IDC_LIST_Product,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,171,125,162,
+                    116
+    LTEXT           "元",IDC_STATIC,122,154,8,8
+    LTEXT           "元",IDC_STATIC,129,267,8,8
+    LTEXT           "元",IDC_STATIC,299,264,8,8
+    LTEXT           "出货单号：",IDC_STATIC,197,26,38,8
+    EDITTEXT        IDC_EDIT_SELL_LOGID,237,20,93,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "客户信息",IDC_STATIC,11,10,159,95
+    LTEXT           "客户地址：",IDC_STATIC,27,44,38,8
+    LTEXT           "客户电话：",IDC_STATIC,27,62,38,8
+    LTEXT           "联系人：",IDC_STATIC,27,82,38,8
+    GROUPBOX        "单据信息",IDC_STATIC,180,10,159,95
+    LTEXT           "销售人员：",IDC_STATIC,197,65,38,8
+    LTEXT           "联系电话：",IDC_STATIC,197,86,38,8
+    LTEXT           "货物单位：",IDC_STATIC,30,190,37,8
+    LTEXT           "金额：",IDC_STATIC,30,208,37,8
+    LTEXT           "备注：",IDC_STATIC,30,226,37,8
+    LTEXT           "元",IDC_STATIC,122,208,8,8
+END
+
+IDD_DIALOG_INPUT_BUY DIALOG DISCARDABLE  0, 0, 311, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加进货记录"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,68,32,100,15
+    EDITTEXT        IDC_EDIT_INPUTBUY_COMPANYNAME,68,52,100,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTBUY_PRODUCTMODEL,69,91,56,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTBUY_PRONUM,69,112,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTBUY_PROPRICE,69,134,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加->",IDC_BUTTON_ADD2,137,114,29,14
+    EDITTEXT        IDC_EDIT_INPUTBUY_TOTALPRICE,68,175,58,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTBUY_SELLPRICE,219,177,58,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,77,202,50,14
+    PUSHBUTTON      "取消",IDCANCEL,150,202,50,14
+    CONTROL         "List1",IDC_LIST_Product2,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,173,79,122,73
+    LTEXT           "日期：",IDC_STATIC,28,37,23,8
+    LTEXT           "公司名称：",IDC_STATIC,28,57,38,8
+    LTEXT           "总价：",IDC_STATIC,28,178,23,8
+    LTEXT           "进货价格：",IDC_STATIC,179,180,38,8
+    LTEXT           "货物型号：",IDC_STATIC,28,95,38,8
+    LTEXT           "货物数量：",IDC_STATIC,28,118,38,8
+    LTEXT           "货物价格：",IDC_STATIC,28,141,38,8
+    GROUPBOX        "",IDC_STATIC,17,66,285,99
+    GROUPBOX        "",IDC_STATIC,25,76,110,79
+    LTEXT           "元",IDC_STATIC,118,136,8,8
+    LTEXT           "元",IDC_STATIC,129,179,8,8
+    LTEXT           "元",IDC_STATIC,280,180,8,8
+    LTEXT           "记录号：",IDC_STATIC,28,15,31,8
+    EDITTEXT        IDC_EDIT_BUY_LOGID,68,11,100,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+END
+
+IDD_DIGPREVIEW DIALOG DISCARDABLE  0, 0, 319, 263
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "预览"
+FONT 10, "System"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GoodsManageSystem Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GoodsManageSystem\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GoodsManageSystem.EXE\0"
+            VALUE "ProductName", "GoodsManageSystem 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GOODSMANAGESYSTEM_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 594
+        BOTTOMMARGIN, 386
+    END
+
+    IDD_DIALOG_INPUT_SELL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 349
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "删除"
+    BEGIN
+        MENUITEM "删除",                        ID_MENUITEM_INPUTSELL
+    END
+END
+
+IDR_MENUMAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "客户资料"
+    BEGIN
+        MENUITEM "添加客户信息",                IDM_CLIENT_ADD
+        MENUITEM "查询客户信息",                IDM_CLIENT_QUERY
+    END
+    MENUITEM "",                            65535
+    POPUP "出货信息"
+    BEGIN
+        MENUITEM "添加出货记录",                IDM_SELL_ADD
+        MENUITEM "查询出货记录",                IDM_SELL_QUERY
+    END
+    POPUP "进货信息"
+    BEGIN
+        MENUITEM "添加进货记录",                IDM_BUY_ADD
+        MENUITEM "查询进货记录",                IDM_BUY_QUERY
+    END
+    POPUP "关于"
+    BEGIN
+        MENUITEM "关于货物管理系统",            IDM_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 GoodsManageSystem(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GoodsManageSystem.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
