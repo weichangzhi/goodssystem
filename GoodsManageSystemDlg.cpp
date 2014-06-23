@@ -7,6 +7,7 @@
 #include "DIALOG_INPUT_CLIENT.h"
 #include "Dialog_InputSell.h"
 #include "Dialog_InputBuy.h"
+#include "Dialog_UserInfo.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

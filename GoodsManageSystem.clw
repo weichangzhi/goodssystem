@@ -2,37 +2,39 @@
 
 [General Info]
 Version=1
-LastClass=CDialog_InputSell
+LastClass=Dialog_UserInfo
 LastTemplate=CDialog
 NewFileInclude1=#include "stdafx.h"
 NewFileInclude2=#include "GoodsManageSystem.h"
 
-ClassCount=11
+ClassCount=12
 Class1=CGoodsManageSystemApp
 Class2=CGoodsManageSystemDlg
 Class3=CAboutDlg
 
-ResourceCount=12
+ResourceCount=13
 Resource1=IDD_DIALOG_SELL
 Resource2=IDR_MAINFRAME
-Resource3=IDD_DIALOG_INPUT_CLIENT
-Resource4=IDD_ABOUTBOX
-Resource5=IDD_DIALOG_BUY
+Resource3=IDR_MENU1
+Resource4=IDD_DIALOG_USERINFO
+Resource5=IDD_DIALOG_INPUT_SELL
 Class4=CDialog_SELL
 Class5=CDIALOG_CLIENT
 Class6=CDIALOG_BUY
 Class7=CSelTab
-Resource6=IDD_DIALOG_INPUT_SELL
+Resource6=IDD_GOODSMANAGESYSTEM_DIALOG
 Class8=CDIALOG_INPUT_CLIENT
-Resource7=IDD_DIGPREVIEW
+Resource7=IDD_ABOUTBOX
 Class9=CDialog_InputSell
-Resource8=IDD_GOODSMANAGESYSTEM_DIALOG
+Resource8=IDD_DIALOG_BUY
 Class10=CDialog_InputBuy
-Resource9=IDR_MENU1
-Resource10=IDD_DIALOG_CLIENT
-Resource11=IDD_DIALOG_INPUT_BUY
+Resource9=IDD_DIALOG_INPUT_CLIENT
+Resource10=IDD_DIGPREVIEW
+Resource11=IDD_DIALOG_CLIENT
 Class11=CPreview
-Resource12=IDR_MENUMAIN
+Resource12=IDD_DIALOG_INPUT_BUY
+Class12=Dialog_UserInfo
+Resource13=IDR_MENUMAIN
 
 [CLS:CGoodsManageSystemApp]
 Type=0
@@ -231,7 +233,7 @@ ImplementationFile=Dialog_InputSell.cpp
 BaseClass=CDialog
 Filter=D
 VirtualFilter=dWC
-LastObject=IDC_EDIT_INPUTSELL_MONEY
+LastObject=CDialog_InputSell
 
 [DLG:IDD_DIALOG_INPUT_BUY]
 Type=1
@@ -303,4 +305,24 @@ BaseClass=CDialog
 Filter=D
 LastObject=CPreview
 VirtualFilter=dWC
+
+[DLG:IDD_DIALOG_USERINFO]
+Type=1
+Class=Dialog_UserInfo
+ControlCount=6
+Control1=IDC_EDIT_USERNAME,edit,1350631552
+Control2=IDC_EDIT_PASSWD,edit,1350631584
+Control3=IDOK,button,1342242817
+Control4=IDCANCEL,button,1342242816
+Control5=IDC_STATIC,static,1342308352
+Control6=IDC_STATIC,static,1342308352
+
+[CLS:Dialog_UserInfo]
+Type=0
+HeaderFile=Dialog_UserInfo.h
+ImplementationFile=Dialog_UserInfo.cpp
+BaseClass=CDialog
+Filter=D
+VirtualFilter=dWC
+LastObject=Dialog_UserInfo
 

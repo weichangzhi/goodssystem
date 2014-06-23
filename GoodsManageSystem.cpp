@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "GoodsManageSystem.h"
 #include "GoodsManageSystemDlg.h"
+#include "Dialog_UserInfo.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -67,19 +68,24 @@ BOOL CGoodsManageSystemApp::InitInstance()
 	}
 	g_adoDataSet.SetConnection(&g_adoConn);
 
-	CGoodsManageSystemDlg dlg;
-	m_pMainWnd = &dlg;
-	int nResponse = dlg.DoModal();
-	if (nResponse == IDOK)
+	Dialog_UserInfo userinfo;
+	if(userinfo.DoModal()==IDOK)
 	{
-		// TODO: Place code here to handle when the dialog is
-		//  dismissed with OK
+		CGoodsManageSystemDlg dlg;
+		m_pMainWnd = &dlg;
+		int nResponse = dlg.DoModal();
+		if (nResponse == IDOK)
+		{
+			// TODO: Place code here to handle when the dialog is
+			//  dismissed with OK
+		}
+		else if (nResponse == IDCANCEL)
+		{
+			// TODO: Place code here to handle when the dialog is
+			//  dismissed with Cancel
+		}		
 	}
-	else if (nResponse == IDCANCEL)
-	{
-		// TODO: Place code here to handle when the dialog is
-		//  dismissed with Cancel
-	}
+
 
 	// Since the dialog has been closed, return FALSE so that we exit the
 	//  application, rather than start the application's message pump.

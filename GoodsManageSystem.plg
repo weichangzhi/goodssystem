@@ -6,37 +6,38 @@
 --------------------Configuration: GoodsManageSystem - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\wells\AppData\Local\Temp\RSPFF36.tmp" with contents
+Creating temporary file "C:\Users\wells\AppData\Local\Temp\RSP53FE.tmp" with contents
 [
 /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/GoodsManageSystem.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"F:\货物管理\GoodsManageSystem\GoodsManageSystem\GoodsManageSystemDlg.cpp"
+"F:\goodssystem\Dialog_UserInfo.cpp"
 ]
-Creating command line "cl.exe @C:\Users\wells\AppData\Local\Temp\RSPFF36.tmp" 
-Creating temporary file "C:\Users\wells\AppData\Local\Temp\RSPFF37.tmp" with contents
+Creating command line "cl.exe @C:\Users\wells\AppData\Local\Temp\RSP53FE.tmp" 
+Creating temporary file "C:\Users\wells\AppData\Local\Temp\RSP53FF.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:yes /pdb:"Debug/GoodsManageSystem.pdb" /debug /machine:I386 /out:"Debug/GoodsManageSystem.exe" /pdbtype:sept 
-".\Debug\AdoDB.obj"
-".\Debug\DIALOG_BUY.obj"
-".\Debug\DIALOG_CLIENT.obj"
-".\Debug\DIALOG_INPUT_CLIENT.obj"
-".\Debug\Dialog_InputBuy.obj"
-".\Debug\Dialog_InputSell.obj"
-".\Debug\Dialog_SELL.obj"
-".\Debug\GoodsManageSystem.obj"
-".\Debug\GoodsManageSystemDlg.obj"
-".\Debug\Preview.obj"
-".\Debug\SelTab.obj"
-".\Debug\StdAfx.obj"
-".\Debug\GoodsManageSystem.res"
+.\Debug\AdoDB.obj
+.\Debug\DIALOG_BUY.obj
+.\Debug\DIALOG_CLIENT.obj
+.\Debug\DIALOG_INPUT_CLIENT.obj
+.\Debug\Dialog_InputBuy.obj
+.\Debug\Dialog_InputSell.obj
+.\Debug\Dialog_SELL.obj
+.\Debug\GoodsManageSystem.obj
+.\Debug\GoodsManageSystemDlg.obj
+.\Debug\Preview.obj
+.\Debug\SelTab.obj
+.\Debug\StdAfx.obj
+.\Debug\GoodsManageSystem.res
+.\Debug\Dialog_UserInfo.obj
 ]
-Creating command line "link.exe @C:\Users\wells\AppData\Local\Temp\RSPFF37.tmp"
+Creating command line "link.exe @C:\Users\wells\AppData\Local\Temp\RSP53FF.tmp"
 <h3>Output Window</h3>
 Compiling...
-GoodsManageSystemDlg.cpp
-f:\货物管理\goodsmanagesystem\goodsmanagesystem\debug\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
-f:\货物管理\goodsmanagesystem\goodsmanagesystem\adodb.h(199) : warning C4244: 'return' : conversion from '__int64' to 'long', possible loss of data
-f:\货物管理\goodsmanagesystem\goodsmanagesystem\adodb.h(201) : warning C4244: 'return' : conversion from '__int64' to 'long', possible loss of data
-f:\货物管理\goodsmanagesystem\goodsmanagesystem\adodb.h(209) : warning C4244: 'return' : conversion from '__int64' to 'long', possible loss of data
+Dialog_UserInfo.cpp
+f:\goodssystem\debug\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+f:\goodssystem\adodb.h(199) : warning C4244: 'return' : conversion from '__int64' to 'long', possible loss of data
+f:\goodssystem\adodb.h(201) : warning C4244: 'return' : conversion from '__int64' to 'long', possible loss of data
+f:\goodssystem\adodb.h(209) : warning C4244: 'return' : conversion from '__int64' to 'long', possible loss of data
 Linking...
 
 

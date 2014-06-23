@@ -19,6 +19,7 @@
 #define IDI_ICON2                       141
 #define IDI_ICON3                       142
 #define IDD_DIGPREVIEW                  143
+#define IDD_DIALOG_USERINFO             144
 #define IDC_TAB1                        1000
 #define IDC_COMBO_CLIENT                1001
 #define IDC_EDIT_CLIENT                 1002
@@ -72,6 +73,8 @@
 #define IDC_EDIT_INPUTSELL_UINT         1044
 #define IDC_EDIT_INPUTSELL_MONEY        1045
 #define IDC_EDIT_INPUTSELL_TIPS         1046
+#define IDC_EDIT_USERNAME               1047
+#define IDC_EDIT_PASSWD                 1048
 #define ID_MENUITEM_INPUTSELL           32147
 #define IDM_CLIENT_ADD                  32776
 #define IDM_CLIENT_QUERY                32777
@@ -85,9 +88,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        144
+#define _APS_NEXT_RESOURCE_VALUE        145
 #define _APS_NEXT_COMMAND_VALUE         32783
-#define _APS_NEXT_CONTROL_VALUE         1047
+#define _APS_NEXT_CONTROL_VALUE         1049
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
